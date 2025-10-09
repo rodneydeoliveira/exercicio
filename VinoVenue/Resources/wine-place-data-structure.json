@@ -1,0 +1,271 @@
+{
+  "users": [
+    {
+      "id": "user_001",
+      "name": "João Silva",
+      "email": "joao.silva@email.com",
+      "profilePhoto": "https://example.com/photos/joao.jpg",
+      "createdAt": "2024-01-15T10:30:00Z",
+      "totalPoints": 45,
+      "level": "Bronze"
+    },
+    {
+      "id": "user_002", 
+      "name": "Maria Santos",
+      "email": "maria.santos@email.com",
+      "profilePhoto": "https://example.com/photos/maria.jpg",
+      "createdAt": "2024-01-20T14:15:00Z",
+      "totalPoints": 78,
+      "level": "Prata"
+    }
+  ],
+  
+  "restaurants": [
+    {
+      "id": "rest_001",
+      "name": "Restaurante Bistrô",
+      "address": "Rua das Flores, 123 - São Paulo, SP",
+      "coordinates": {
+        "lat": -23.5505,
+        "lng": -46.6333
+      },
+      "averageRating": 4.2,
+      "totalReviews": 15,
+      "tags": ["romântico", "elegante", "caro"],
+      "createdAt": "2024-01-10T09:00:00Z"
+    },
+    {
+      "id": "rest_002",
+      "name": "Cantina Italiana",
+      "address": "Av. Paulista, 456 - São Paulo, SP", 
+      "coordinates": {
+        "lat": -23.5613,
+        "lng": -46.6565
+      },
+      "averageRating": 4.5,
+      "totalReviews": 23,
+      "tags": ["casual", "família", "acessível"],
+      "createdAt": "2024-01-12T11:30:00Z"
+    }
+  ],
+  
+  "wines": [
+    {
+      "id": "wine_001",
+      "brand": "Casa Valduga",
+      "grapeType": "Cabernet Sauvignon",
+      "vintage": 2020,
+      "averageRating": 4.3,
+      "totalReviews": 12,
+      "tags": ["tinto", "encorpado", "premium"],
+      "createdAt": "2024-01-15T16:45:00Z"
+    },
+    {
+      "id": "wine_002", 
+      "brand": "Miolo",
+      "grapeType": "Chardonnay",
+      "vintage": 2021,
+      "averageRating": 4.0,
+      "totalReviews": 8,
+      "tags": ["branco", "seco", "acessível"],
+      "createdAt": "2024-01-18T13:20:00Z"
+    },
+    {
+      "id": "wine_003",
+      "brand": "Vinho Desconhecido",
+      "grapeType": "Merlot", 
+      "vintage": null,
+      "averageRating": 3.5,
+      "totalReviews": 3,
+      "tags": ["tinto", "suave"],
+      "createdAt": "2024-01-22T19:10:00Z"
+    }
+  ],
+  
+  "reviews": [
+    {
+      "id": "review_001",
+      "userId": "user_001",
+      "restaurantId": "rest_001", 
+      "wineId": "wine_001",
+      "wineRating": 4.5,
+      "restaurantRating": 4.0,
+      "wineComment": "Vinho excelente, muito encorpado e com taninos bem equilibrados",
+      "restaurantComment": "Ambiente romântico, mas o serviço demorou um pouco",
+      "wineTags": ["encorpado", "elegante"],
+      "restaurantTags": ["romântico", "lento"],
+      "photos": {
+        "wineLabel": "https://example.com/photos/wine_label_001.jpg",
+        "restaurant": "https://example.com/photos/restaurant_001.jpg"
+      },
+      "pointsEarned": 12,
+      "createdAt": "2024-01-25T20:30:00Z",
+      "updatedAt": "2024-01-25T20:30:00Z"
+    },
+    {
+      "id": "review_002",
+      "userId": "user_002",
+      "restaurantId": "rest_002",
+      "wineId": "wine_002", 
+      "wineRating": 4.0,
+      "restaurantRating": 4.5,
+      "wineComment": "Chardonnay refrescante, perfeito para o verão",
+      "restaurantComment": "Cantina acolhedora, comida deliciosa e preço justo",
+      "wineTags": ["refrescante", "verão"],
+      "restaurantTags": ["acolhedor", "delicioso", "acessível"],
+      "photos": {
+        "wineLabel": "https://example.com/photos/wine_label_002.jpg",
+        "restaurant": null
+      },
+      "pointsEarned": 8,
+      "createdAt": "2024-01-26T18:45:00Z",
+      "updatedAt": "2024-01-26T18:45:00Z"
+    },
+    {
+      "id": "review_003",
+      "userId": "user_001",
+      "restaurantId": "rest_001",
+      "wineId": "wine_003",
+      "wineRating": 3.0,
+      "restaurantRating": 4.5,
+      "wineComment": "Vinho simples, mas harmoniza bem com a comida",
+      "restaurantComment": "Restaurante melhorou muito, serviço excelente agora",
+      "wineTags": ["simples", "harmonioso"],
+      "restaurantTags": ["melhorou", "excelente"],
+      "photos": {
+        "wineLabel": null,
+        "restaurant": "https://example.com/photos/restaurant_003.jpg"
+      },
+      "pointsEarned": 8,
+      "createdAt": "2024-01-28T12:15:00Z",
+      "updatedAt": "2024-01-28T12:15:00Z"
+    }
+  ],
+  
+  "tags": [
+    {
+      "id": "tag_001",
+      "name": "romântico",
+      "category": "ambiente",
+      "color": "#FF69B4"
+    },
+    {
+      "id": "tag_002", 
+      "name": "elegante",
+      "category": "ambiente",
+      "color": "#8B4513"
+    },
+    {
+      "id": "tag_003",
+      "name": "caro",
+      "category": "preço",
+      "color": "#FFD700"
+    },
+    {
+      "id": "tag_004",
+      "name": "acessível",
+      "category": "preço", 
+      "color": "#32CD32"
+    },
+    {
+      "id": "tag_005",
+      "name": "encorpado",
+      "category": "vinho",
+      "color": "#8B0000"
+    },
+    {
+      "id": "tag_006",
+      "name": "refrescante",
+      "category": "vinho",
+      "color": "#87CEEB"
+    },
+    {
+      "id": "tag_007",
+      "name": "tinto",
+      "category": "tipo_vinho",
+      "color": "#800080"
+    },
+    {
+      "id": "tag_008",
+      "name": "branco", 
+      "category": "tipo_vinho",
+      "color": "#F5F5DC"
+    }
+  ],
+  
+  "rankings": {
+    "topWines": [
+      {
+        "wineId": "wine_001",
+        "brand": "Casa Valduga",
+        "grapeType": "Cabernet Sauvignon", 
+        "averageRating": 4.3,
+        "totalReviews": 12,
+        "position": 1
+      },
+      {
+        "wineId": "wine_002",
+        "brand": "Miolo",
+        "grapeType": "Chardonnay",
+        "averageRating": 4.0,
+        "totalReviews": 8,
+        "position": 2
+      }
+    ],
+    "topRestaurants": [
+      {
+        "restaurantId": "rest_002",
+        "name": "Cantina Italiana",
+        "averageRating": 4.5,
+        "totalReviews": 23,
+        "position": 1
+      },
+      {
+        "restaurantId": "rest_001", 
+        "name": "Restaurante Bistrô",
+        "averageRating": 4.2,
+        "totalReviews": 15,
+        "position": 2
+      }
+    ],
+    "topReviewers": [
+      {
+        "userId": "user_002",
+        "name": "Maria Santos",
+        "totalPoints": 78,
+        "totalReviews": 12,
+        "position": 1
+      },
+      {
+        "userId": "user_001",
+        "name": "João Silva", 
+        "totalPoints": 45,
+        "totalReviews": 8,
+        "position": 2
+      }
+    ]
+  },
+  
+  "userPoints": [
+    {
+      "userId": "user_001",
+      "totalPoints": 45,
+      "level": "Bronze",
+      "pointsBreakdown": {
+        "photoWineLabel": 18,
+        "photoRestaurant": 12, 
+        "reviewWithoutPhoto": 15
+      }
+    },
+    {
+      "userId": "user_002",
+      "totalPoints": 78,
+      "level": "Prata", 
+      "pointsBreakdown": {
+        "photoWineLabel": 24,
+        "photoRestaurant": 18,
+        "reviewWithoutPhoto": 36
+      }
+    }
+  ]
+}
